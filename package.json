@@ -1,0 +1,8 @@
+{
+  "name": "noxemia.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Noxemia/noxemia.com.git",
+  "author": "Aaron Sandgren <aaron.sandgren@live.se>",
+  "license": "MIT"
+}
