@@ -55,7 +55,7 @@ const Homepage = () => {
         <Sidebar>
           <LogoWrapper>
             <StyledLink style={{ textDecoration: "none" }} to="/">
-              <img src={Logo}></img>
+              <img src={Logo} alt="Site Logo"></img>
             </StyledLink>
             <StyledLink to="/code">
               <Button text="</>"></Button>
@@ -63,6 +63,7 @@ const Homepage = () => {
             <Button>
               <img
                 style={{ width: "auto", height: "80%" }}
+                alt="Link to GitHub"
                 src={GithubLogo}
               ></img>
             </Button>

@@ -6,4 +6,4 @@ ENV NODE_ENV=development
 
 COPY package.json yarn.lock tsconfig.json ./
 
-CMD yarn && ls && yarn dev
+CMD yarn && ls && yarn start
