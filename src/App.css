@@ -1,0 +1,67 @@
+Link{
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: none;
+  float: left;
+  background: #615d5e;
+}
+
+header{
+  height: 8%;
+  width: 100%;
+  background: #242021;
+  
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+.App{
+  height: 92%;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.headerItems{
+  width: 91%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  float: left;
+}
+
+#logo{
+  height: 100%;
+  width: 9%;
+  float: left;
+}
+
+.headerLink{
+  width: 10%;
+  margin: 0 2% 0 2%;
+  height: 100%;
+}
+
+.headerButton{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* white: #E7E6F7 black: #3A3335*/
