@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["plugin:react/recommended", "google"],
+  //"extends": ["plugin:react/recommended", "google"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -18,7 +18,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "semi": ["error", "never"],
-    "quotes": [2, "single"]
+    "semi": 0,
+    "quotes": 0
   }
 }

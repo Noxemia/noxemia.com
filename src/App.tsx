@@ -21,7 +21,7 @@ function CV(){
 const ScreenContainer = styled.div`
   height: 90%;
   width: 100%;
-`
+` 
 
 
 function App() {
@@ -36,12 +36,15 @@ function App() {
         </div>
         
         </header>
-
+        <div className="maincontainer">
         <Route path="/" exact component={HomeScreen} />
         <Route path="/about" exact component={About} />
         <Route path="/cv" exact component={CV} />
-
+        </div>
       </Router>
+      <footer>
+        Created by and for Aaron 'Nox' Sandgren
+      </footer>
     </div>
   );
 }

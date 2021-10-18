@@ -5,14 +5,26 @@ type Props = {
     itemText: String
 }
 
-const Damn = Styled.p`
+const TextContainer = Styled.p`
   text-decoration: none;
   color: white;
 `
 
+const HeaderButtonDiv = Styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  transition: 0.3s;
+  &:hover {
+    background-color: #615d5e;
+  }
+`
+
 const HeaderButton: React.FC<Props> = ({itemText}) => 
-  <div className="headerButton">
-    <Damn>{itemText}</Damn>
-  </div>
+  <HeaderButtonDiv>
+    <TextContainer>{itemText}</TextContainer>
+  </HeaderButtonDiv>
 
 export default HeaderButton;

@@ -10,13 +10,32 @@ body{
   border: none;
   float: left;
   background: #615d5e;
+  overflow: hidden;
+}
+
+.maincontainer{
+  height: 86%;
+  width: 100%;
 }
 
 header{
   height: 8%;
   width: 100%;
   background: #242021;
-  
+  border-bottom: white 1px solid;
+  box-sizing: border-box;
+}
+
+footer{
+  width: 100%;
+  height: 6%;
+  background: #242021;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: white 1px solid;
+  box-sizing: border-box;
+  color: lightgray;
 }
 
 #root{
@@ -25,7 +44,7 @@ header{
 }
 
 .App{
-  height: 92%;
+  height: 100%;
   width: 100%;
 }
 
@@ -34,7 +53,7 @@ a{
 }
 
 .headerItems{
-  width: 91%;
+  width: 89%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -45,20 +64,16 @@ a{
   height: 100%;
   width: 9%;
   float: left;
+  margin:0 1% 0;
 }
 
 .headerLink{
-  width: 10%;
-  margin: 0 2% 0 2%;
+  width: 15%;
+  margin: 0 0 0 0%;
   height: 100%;
 }
 
-.headerButton{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 

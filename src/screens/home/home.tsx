@@ -1,55 +1,36 @@
 import React from 'react';
-import coding from '../../media/coding.png';
+import coding from '../../media/coding.jpeg';
 import styled from 'styled-components';
+import './home.css';
+import selfimage from './../../media/facebookpfp.jpg'
 
 
 const HeadingDiv = styled.div`
     width: 100%;
-    height: 30%;
+    height: 100%;
     background: white;
-    position: absolute; 
+    float:left;
 `
 
-const HeadingImage = styled.img`
-    position: absolute ;
-    width: 100% ;
-    height: 100% ;
-    overflow: hidden ;
-`
 
-const TextGradient = styled.div`
-    width: 40% ;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 64%, rgba(255,255,255,0) 100%);
-    opacity: 0.9;
-    position: absolute ;
-    height: 100% ;
-    z-index: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 2%;
-`
-
-const NameText = styled.p`
-    color: white;
-    font-size: 2em;
-`
-
-//<HeadingImage src={coding}/> 
 function Home(){
     return (
-        <HeadingDiv> 
-            <HeadingImage src={coding}/>
-            <TextGradient>
-                <NameText>Aaron 'Nox' Sandgren</NameText>
-            </TextGradient>
-        </HeadingDiv>
+        <HeadingDiv className="HeadingDiv" style={{backgroundImage: `url(${coding})`, backgroundSize: `cover`}}> 
 
+        <div className="MainContainer" >
+            <div className="ShortInfo">
+                <img src={selfimage} className="SelfImage"/>
+                <p className="ShortInfoHeader">Hello World!</p>
+            </div>
+            <div className="LongerInfo">Lorem ipsum something something</div>
+
+        </div>
+        <div className="SkillContainer">
+            <div className="SkillHeading">Skills</div>
+        </div>
         
 
-
-
+        </HeadingDiv>
     )
 
 }
