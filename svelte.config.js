@@ -1,8 +1,15 @@
 // svelte.config.js
-import node from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-node';
 
 export default {
 	kit: {
-		adapter: node()
+		adapter: adapter({
+			// default options are shown
+			out: 'build',
+			precompress: false,
+			env: {
+				port: '80'
+			}
+		})
 	}
 };
