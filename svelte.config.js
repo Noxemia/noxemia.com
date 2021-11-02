@@ -8,7 +8,8 @@ export default {
 			out: 'build',
 			precompress: false,
 			env: {
-				port: '80'
+				host: 'HOST',
+				port: 'PORT'
 			}
 		})
 	}
